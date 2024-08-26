@@ -75,7 +75,8 @@ void loop(void) {
     }
 
     if (bmi270.magneticFieldAvailable()) {
-        int16_t mx, my, mz = 0;
+//        int16_t mx, my, mz = 0;
+        float mx, my, mz = 0.0;
         bmi270.readMagneticField(mx, my, mz);
 
         Serial.print("mag: \t");

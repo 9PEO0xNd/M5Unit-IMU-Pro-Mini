@@ -88,7 +88,8 @@ class BMI270 {
     virtual float gyroscopeSampleRate();                      // Sampling rate of the sensor.
 
     // Magnetometer
-    virtual int readMagneticField(int16_t &x, int16_t &y, int16_t &z);  // Results are in uT (micro Tesla).
+//    virtual int readMagneticField(int16_t &x, int16_t &y, int16_t &z);  // Results are in uT (micro Tesla).
+    virtual int readMagneticField(float &x, float &y, float &z);  // Results are in uT (micro Tesla).
     virtual int magneticFieldAvailable();                               // Number of samples in the FIFO.
     virtual float magneticFieldSampleRate();                            // Sampling rate of the sensor.
 

@@ -226,7 +226,8 @@ float BMI270::gyroscopeSampleRate() {
 }
 
 // Magnetometer
-int BMI270::readMagneticField(int16_t &x, int16_t &y, int16_t &z) {
+//int BMI270::readMagneticField(int16_t &x, int16_t &y, int16_t &z) {
+int BMI270::readMagneticField(float &x, float &y, float &z) {
     struct bmm150_mag_data mag_data;
     int const rc = bmm150_read_mag_data(&mag_data, &bmm1);
     x            = mag_data.x;
